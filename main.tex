@@ -18,7 +18,8 @@
      }
 
 \usepackage{enumitem}
-  
+ \usepackage{fancyhdr}
+ 
 \usepackage[toc,page]{appendix}
 
 \usepackage{ucs}
@@ -27,24 +28,77 @@
 \geometry{
 	margin = 1in
 }
+\usepackage[myheadings]{fullpage}
+
+%\author{
+%	\begin{tabular}{rl}
+%		Fernández González, Álvaro. & DNI 50357343Q\\
+%		Fernández González, Gonzalo. & DNI 50357342S\\
+%		López Gómez, Alejandro. & DNI 48207387P\\
+%		Sánchez Diaz, Jorge. & DNI 50252083G \\
+%		Siodmok, Oskar Denis. & NIE Y0215268-W 
+%	\end{tabular}
+%}
+
+%\title{Comparación del Código Ético de la Universidad Rey Juan Carlos y del Códgio Deontológico de la Profesión Farmacéutica\\
+%	[0.3em]\large 
+%
+%	} 
+
+% --------------------------------------------------------------------
+% Definitions (do not change this)
+% --------------------------------------------------------------------
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+\makeatletter							% Title
+\def\printtitle{%						
+    {\centering \@title\par}}
+\makeatother									
+
+\makeatletter							% Author
+\def\printauthor{%					
+    {\centering \large \@author}}				
+\makeatother							
+
+% --------------------------------------------------------------------
+% Metadata (Change this)
+% --------------------------------------------------------------------
+\title{	\normalsize {Trabajo de la asignatura de Principios Jurídicos de la ETSII} 	% Subtitle
+		 	\\[.5cm]								% 2cm spacing
+			\HRule{0.5pt} \\						% Upper rule
+			\LARGE \textbf{\uppercase{Comparación del Código Ético de la Universidad Rey Juan Carlos y del Códgio Deontológico de la Profesión Farmacéutica}}	% Title
+			\HRule{2pt} \\ [0.5cm]		% Lower rule + 0.5cm spacing
+			\normalsize \today			% Todays date
+		}
 
 \author{
-	\begin{tabular}{rl}
-		Fernández González, Álvaro. & DNI 50357343Q\\
-		Fernández González, Gonzalo. & DNI 50357342S\\
-		López Gómez, Alejandro. & DNI 48207387P\\
-		Sánchez Diaz, Jorge. & DNI 50252083G \\
-		Siodmok, Oskar Denis. & NIE Y0215268-W 
-	\end{tabular}
+		Fernández González, Álvaro.  DNI 50357343Q\\
+		Fernández González, Gonzalo.  DNI 50357342S\\
+		López Gómez, Alejandro.  DNI 48207387P\\
+		Sánchez Diaz, Jorge.  DNI 50252083G \\
+		Siodmok, Oskar Denis.  NIE Y0215268-W \\
 }
 
-\title{Comparación del Código Ético de la Universidad Rey Juan Carlos y del Códgio Deontológico de la Profesión Farmacéutica\\
-	[0.3em]\large Trabajo de la asignatura de Principios Jurídicos de la ETSII
 
-	} 
 \begin{document}
-\maketitle
-\tableofcontents\pagebreak
+%\maketitle
+
+% ------------------------------------------------------------------------------
+% Maketitle
+% ------------------------------------------------------------------------------
+\thispagestyle{empty}		% Remove page numbering on this page
+
+\printtitle					% Print the title data as defined above
+\vfill
+\printauthor				% Print the author data as defined above
+\newpage
+\pagestyle{plain}
+%\pagebreak
+\tableofcontents
+\pagebreak
+
+
+
 
 %%%% Paragraph formating
 \setlength\parindent{.5in}
@@ -53,13 +107,11 @@
 
 \section{Introducción}
 \subsection{¿Por qué estos dos códigos?}
-Para elegir un 2º código con el que comparar el CEURJC\footnote{Por cuestiones de simpleza y limpieza nos referimos al al Código Ético de la Universidad Rey Juan Carlos como CEURJC y al Código Deontológico de la Profesión Farmacéutica como CDF.}, quedamos un día y nos reunimos para proponer ideas.
+Para elegir un segundo código con el que comparar el CEURJC\footnote{Por cuestiones de simpleza y limpieza nos referimos al Código Ético de la Universidad Rey Juan Carlos como CEURJC y al Código Deontológico de la Profesión Farmacéutica como CDF.}, nos pusimos en contacto y concretamos un día para reunirnos y proponer ideas.
 
-Primero pensamos que sería buena idea comparar los códigos de dos universidades. A ver que diferencias éticas podía haber entre dos instituciones con la misma finalidad. Buscamos códigos éticos de otras universidades como el de la UPM, pero al final vimos que realmente no daba mucho contenido y la descartamos.
+Primero pensamos que sería buena idea comparar los códigos de dos universidades. A ver que diferencias éticas podía haber entre dos instituciones con la misma finalidad. Buscamos códigos éticos de otras universidades como el de la UPM, pero al final vimos que realmente no daba mucho contenido y la descartamos. Es entonces cuando pensamos que realmente lo que necesitábamos para hacer una comparación interesante, era un código interesante. Así que miramos trabajos en los cuales tener valores y aplicarlos a dilemas morales estuviesen a la orden del día.
 
-Tras esto pensamos que para hacer una comparación interesante, necesitábamos un código interesante. Así que miramos trabajos en los cuales tener valores y aplicarlos a dilemas morales estuviese a la orden del día.
-
-Miramos códigos penitenciarios y nos parecieron que se correspondían con lo que estábamos buscando. Sin embargo, uno de nosotros propuso el código ético de la profesión farmacéutica pues su padre trabajaba en ello y si teníamos dudas nos lo podría desarrollar y poner ejemplos. Valoramos y escogimos este último.
+Después de proponer ideas y búsquedas, vimos que los códigos penitenciarios se correspondían con lo que estábamos buscando. Sin embargo, uno de nosotros propuso el código ético de la profesión farmacéutica, pues su padre trabajaba en ello, y así si teníamos dudas nos lo podría desarrollar y poner ejemplos. Lo valoramos y finalmente escogimos este último.
 
 \subsection{Hipótesis}
 %REDACCIÓN ORIGINAL DE RISI
@@ -67,50 +119,101 @@ Miramos códigos penitenciarios y nos parecieron que se correspondían con lo qu
 %La brevedad del CEURJC me hace pensar que está diseñado con un fin estético de cara al público más que de buscar unos criterios éticos necesarios para la institución como el CEF.
 
 A primera vista lo que más llama la atención es la diferencia de extensión entre los códigos. Así, la brevedad del CEURJC nos hizo pensar que el propósito de este podría ser estético de cara al público y no buscar unos criterios éticos necesarios para la institución, como ocurriría en el CDF. Por otro lado, supusimos que el CDF tendría un carácter menos general y desarrollaría conceptos menos abstractos con el fin de detallar con claridad los límites de la profesión. Y no solo habría una diferencia en la generalidad de los códigos, sino que también una diferencia en la explicitud. Tras una lectura superficial del CEURJC nuestras predicciones sobre las diferencias entre los códigos se colmaron de matices.
-	
-Primero, nos pareció que el CDF no le daría tanta prioridad a cuestiones como la argumentación racional y al rigor, como se hace en el punto ``RESPETO Y COLABORACIÓN'' del CEURJC. Lo mismo pensamos de cuestiones como la colaboración o la investigación, que tienen más sentido en un contexto universitario y no profesional. En cambio, sobre cuestiones básicas y normalizadas en toda sociedad moderna, hipotetizamos que sí habría similitudes claras. Esto es, la defensa de la igualdad independientemente de las ideas y las condiciones y la defensa de la libertad a la hora de ejercer derechos fundamentales.
 
-Hay un punto de especial interés en el CEURJC, este es el de ``PARTICIPACIÓN DEMOCRÁTICA''. Realmente no sabemos como es el contexto de la profesión farmacéutica. Además, el CDF parece específico para la profesión misma. Es por eso que dedujimos que el CDF no tendría ningún tipo de explicación respecto a participaciones democráticas y procesos electorales, pues estos solo tendrían sentido en un contexto de ``microsociedad'' como lo es la universidad. Lo mismo pasa en el punto ``BUEN GOBIERNO, TRANSPARENCIA Y RENDICIÓN DE CUENTAS'' del CEURJC: cuestiones como la ``transparencia'' o ``justicia'' de un Gobierno solo tienen sentido si tal Gobierno existe.
+Primero, nos pareció que el CDF no le daría tanta prioridad a cuestiones como la argumentación racional y al rigor, como se hace en el punto ``Respeto y Colaboración'' del CEURJC. Lo mismo pensamos de cuestiones como la colaboración o la investigación, que tienen más sentido en un contexto universitario y no profesional. En cambio, sobre cuestiones básicas y normalizadas en toda sociedad moderna, hipotetizamos que sí habría similitudes claras. Esto es, la defensa de la igualdad independientemente de las ideas y las condiciones y la defensa de la libertad a la hora de ejercer derechos fundamentales.
+
+Hay un punto de especial interés en el CEURJC, este es el de ``Participación Democrática''. Realmente no sabemos como es el contexto de la profesión farmacéutica. Además, el CDF parece específico para la profesión misma. Es por eso que dedujimos que el CDF no tendría ningún tipo de explicación respecto a participaciones democráticas y procesos electorales, pues estos solo tendrían sentido en un contexto de ``microsociedad'' como lo es la universidad. Lo mismo pasa en el punto ``Buen gobierno, Transparencia y Rendición de cuentas'’ del CEURJC: cuestiones como la ``transparencia'' o ``justicia'' de un Gobierno solo tienen sentido si tal Gobierno existe.
 
 Respecto a todo lo que es la imagen pública tanto de universitarios como farmacéuticos, las cuestiones de compromiso con la institución del CEURJC seguramente tengan su correspondencia en el CDF. Puede que tal correspondencia no busque la mejora de la institución sino la mejora de la comunidad farmacéutica y su imagen como un todo. Lo mismo seguramente ocurra con el énfasis que pone el CEURJC a la calidad de los servicios que ofrece la universidad y el respeto a la sociedad por parte de la institución y los universitarios. En ese sentido, probablemente el CDF será semejante en buscar una calidad en los medicamentos fabricados, investigados y vendidos para ayudar al máximo números de personas y a la sociedad. 
 
 Finalmente, es probable que el CDF también de importancia a la responsabilidad y asunción de consecuencias pues, al fin y al cabo, el ámbito farmacéutico tiene mucha más seriedad que el universitario. En lo que respecta a la difusión de conocimientos científicos, da la impresión de que esta solo tiene sentido en la esfera de la educación y la universidad.
-
+c
 \section{Diferencias entre los códigos}
+\subsection{Extensión de los códigos}
+La diferencia de extensión entre ambos códigos resulta lógica y comprensible, pues el CEURJC únicamente tiene que regular y orientar el comportamiento y las actitudes de la comunidad docente de esa universidad. En ella existe un número reducido y limitado de miembros, a diferencia del colectivo farmacéutico de España, que comprende más de 75000 farmacéuticos colegiados, incluyendo tanto a los que ejercen su acción en las más de 22000 oficinas de Farmacia, como los que desarrollan su profesión en hospitales y otras áreas, todas ellas relacionadas con la salud. 
 \subsection{Generalidades y ámbitos de aplicación}
-El CDF tiene un carácter general, para cualquier farmacéutico, a diferencia del CEURJC, el cual es específico para la universidad. Este carácter general, o de más bajo nivel, tiene prioridad (en España) ante cualquier otro código y sirve como base para construir códigos más específicos dentro de las diferentes modalidades de la profesión. Por otro lado, el código de la URJC es justamente un ejemplo de un código ético específico. 
+El CDF aplicaría para cualquier farmacéutico, a diferencia del CEURJC, el cual es específico para la universidad. Este carácter general, o de más bajo nivel, tiene prioridad en España ante cualquier otro código y sirve como base para construir códigos más específicos dentro de las diferentes modalidades de la profesión. Ya que este código farmacéutico tiene tal carácter básico, no solo aplicaría a los profesionales, sino que a las Sociedades que estos creen, Sociedades que responderían deontológicamente a las acciones de sus integrantes. Por otro lado, el código de la URJC es justamente un ejemplo de código ético específico. 
 
-Este ámbito de aplicación necesita de unos límites claros. Así, el CEURJC solo se aplicaría dentro de la ``microsociedad'' que es la universidad mientras que el CDF sería de obligado cumplimiento para cualquier profesional farmacéutico que ejerza en España, sea español o europeo. Ya que este código farmacéutico tiene tal carácter general y básico, no solo aplicaría a los profesionales, sino que a las Sociedades que estos creen, Sociedades que responderían deontológicamente a las acciones de sus integrantes. 
+Este ámbito de aplicación necesita de unos límites claros. Así, el CEURJC solo se aplicaría dentro de la ``microsociedad'' que es la universidad, mientras que el CDF sería de obligado cumplimiento para cualquier profesional farmacéutico que trabaje en España, sea español o europeo. 
 
 \subsection{Principios básicos}
- 	Como institución pública, la universidad se compromete a ofrecer buenos servicios a la sociedad respecto a la calidad en la enseñanza, la difusión de conocimientos científicos y la buena administración. En contraste, el CDF claramente especifica en mayor profundidad los principios de compromiso con la sociedad. Esto es debido a que la vida de los españoles está en manos de profesionales como los farmacéuticos. Por lo tanto, el código será estricto respecto al trato a los pacientes. Esto es, tratar a los pacientes de forma igualitaria, anteponer su salud sobre los intereses personales, etc. 
+Como institución pública, la universidad se compromete a ofrecer buenos servicios a la sociedad respecto a la calidad en la enseñanza, la difusión de conocimientos científicos y la buena administración. En contraste, el CDF claramente especifica en mayor profundidad los principios de compromiso con la sociedad. Esto es debido a que la vida de los españoles está en manos de profesionales como los farmacéuticos. Por lo tanto, el código será estricto respecto al trato a los pacientes. Esto es, tratar a los pacientes de forma igualitaria, anteponer su salud sobre los intereses personales, etc. 
 
-La universidad, como reflejo de la sociedad que es, enfatiza en las relaciones sociales. La argumentación lógica, el respeto y la justicia son prácticas necesarias para la colaboración. Estas nociones también son de importancia para los farmacéuticos, pero no tanto como lo es, otra vez, el servicio a los pacientes. Así, mientras que los universitarios tendrán que colaborar por la investigación y transmisión de conocimientos científicos, los farmacéuticos cooperarán por una sociedad más saludable y mejor atendida, dando gran importancia al derecho a la salud. 
+La universidad, como reflejo de la sociedad que es, enfatiza en las relaciones sociales. La argumentación lógica, el respeto y la justicia son prácticas necesarias para la colaboración. Estas nociones también son de importancia para los farmacéuticos, pero no tanto como lo es, otra vez, el servicio a los pacientes. Así, mientras que los universitarios tendrán que colaborar por la investigación y trnsmisión de conocimientos científicos, los farmacéuticos cooperarán por una sociedad más saludable y mejor atendida, dando gran importancia al derecho a la salud. 
 
 Según el CDF, será de gran importancia que el profesional se mantenga actualizado respecto a conocimientos científicos y legales. Además, tendrá que tener cuidado sobre lo que es y no capaz de hacer. Dichos puntos no tienen un reflejo claro en el código universitario, en virtud de la falta de necesidad de ellos, pues al fin y al cabo, las vidas de las personas no dependen de los conocimientos científicos ni legales de los universitarios. 
 
- 	El farmacéutico no puede encubrir ninguna acción legal. Si se da algún acto ilegal el farmacéutico tendrá que comunicarlo con las autoridades y el colegio farmacéutico correspondiente. La ley es de extrema importancia para el farmacéutico. Otra vez y debido a la diferencia en seriedad de los casos, el CEURJC no enfatiza tanto en cuestiones legales. Lo mismo pasa con las titulaciones. Para ejercer de farmacéutico hace falta probar unos conocimientos, obviamente. En esto se diferencia la universidad, pues es pública y universal; al fin y al cabo el conocimiento debería de estar al alcance de todos. 
+El farmacéutico no puede encubrir ninguna acción legal. Si se da algún acto ilegal el farmacéutico tendrá que comunicarlo con las autoridades y el colegio farmacéutico correspondiente. La ley es de extrema importancia para el farmacéutico. Otra vez y debido a la diferencia en seriedad de los casos, el CEURJC no enfatiza tanto en cuestiones legales. Lo mismo pasa con las titulaciones. Para ejercer de farmacéutico hace falta probar unos conocimientos, obviamente. En esto se diferencia la universidad, pues es pública y universal; al fin y al cabo el conocimiento debería de estar al alcance de todos. 
 
-De la misma forma que los productos ofrecidos por los farmacéuticos serán eficaces con una eficacia probada en rigor, el código de la URJC establece que el rigor tiene que estar no solo en los servicios sino en la transferencia de conocimientos.	
+De la misma forma que los productos ofrecidos por los farmacéuticos serán eficaces con una eficacia probada en rigor, el código de la URJC establece que el rigor tiene que estar no solo en los servicios sino en la transferencia de conocimientos.
 
 \subsection{Objetividad y subjetividad}
 Mientras que la universidad abre la puerta a la diversidad de opiniones y al debate de estas, en el campo farmacéutico y en toda ciencia no existe la subjetividad. Es por eso que por encima de toda valoración subjetiva del farmacéutico tiene que estar el rigor científico y los hechos legales. Rigor y leyes que el profesional en cuestión proporcionará y antepondrá a sus intereses personales. 
 
-Aun así, la ética y deontología del farmacéutico tiene importancia ante la ley. Si una nueva ley obliga al profesional a actuar en contra de sus valores podrá presentar una queja al colegio farmacéutico. El farmacéutico tiene que ser claro con sus pacientes, no debe de aceptar sobornos y debe de conocer las consecuencias de sus actos. En otras palabras, responderá personalmente a los daños que cause y aceptará los efectos negativos de estos. El código ético de la URJC tiene su reflejo a estos puntos: el universitario tiene que buscar la difusión científica y fáctica en sociedad, ser responsable y asumir las consecuencias de sus acciones y errores. En el ámbito farmacéutico, un error del profesional puede ser sancionado con indemnizaciones mientras que en la universidad las consecuencias no llegan a ser tan extremas (pues no es requerido de ello), pero aun así se promueve la responsabilidad al actuar.
+Aun así, la ética y deontología del farmacéutico tiene importancia ante la ley. Si una nueva ley obligaal profesional a actuar en contra de sus valores podrá presentar una queja al colegio farmacéutico. El farmacéutico tiene que ser claro con sus pacientes, no debe de aceptar sobornos y debe de conocer las consecuencias de sus actos. En otras palabras, responderá personalmente a los daños que cause y aceptará los efectos negativos de estos. El código ético de la URJC tiene su reflejo en estos puntos: el universitario tiene que buscar la difusión científica y fáctica en la sociedad, ser responsable y asumir las consecuencias de sus acciones y errores. En el ámbito farmacéutico, un error del profesional puede ser sancionado con indemnizaciones mientras que en la universidad las consecuencias no llegan a ser tan extremas (pues no es requerido de ello), pero aun así se promueve la responsabilidad al actuar.
 
+\subsection{Relaciones con las organizaciones}
+ En cuanto a las relaciones con la organización o institución encargada de llevar a cabo los respectivos códigos éticos, observamos que en el capítulo IX del CDF se establece que cualquier farmacéutico podrá ser asesorado por el Consejo General de Colegios Oficiales de Farmacéuticos (CGCOF). Dicho Consejo velará además por el cumplimiento del CDF, %posible cambio
+ sin embargo, no hay ninguna institución específica dentro de la Universidad Rey Juan Carlos que esté encargada de velar por el cumplimiento del CEURJC más allá del deber moral de cada individuo.
+
+Asimismo, se regulan las relaciones entre los distintos Colegios de farmacéuticos (COF) (uno por cada provincia) entre sí y con el CGCOF, que es la organización farmacéutica que engloba a todos los COF. 
+
+Al igual que establece el CEURJC en uno de sus doce compromisos, observamos que el CDF en su artículo 40 hace referencia a las responsabilidades, el buen gobierno, transparencia y rendición de cuentas de aquellos que ostenten cargos en los órganos de Gobierno.
+
+\subsection{Relaciones con las instituciones, centros o establecimientos donde se desempeña la profesión} 
+En cuanto a las relaciones con los centros o establecimientos donde se desempeña la profesión, el CDF en su capítulo X dicta y establece los deberes de los farmacéuticos en los distintos centros donde ejercen su profesión, tanto si son los responsables de los mismos, como si son simples trabajadores, siempre asegurando la calidad de la actividad asistencial y su independencia profesional. No obstante, en el CEURJC al ser un código independiente de otras universidades, únicamente se establecen los deberes de los profesionales que trabajan dentro de los campus URJC, pero no los de todas las personas que ejercen la profesión, como si lo hace el CDF. Aunque sí es cierto que al igual que el Código Deontológico de la Profesión Farmacéutica, el Código Ético de la Universidad Rey Juan Carlos también está comprometido con tratar de ofrecer la mejor calidad en sus tareas.
+
+\subsection{Publicidad}
+En relación al aspecto de la publicidad, el CDF en su capítulo XI decreta que la publicidad de medicamentos y productos sanitarios, debe cumplir con los requisitos legales y prohíbe taxativamente la publicidad de fórmulas magistrales y preparados oficinales. En contraposición, en el CEURJC  no se trata en ningún momento ningún tema relacionado con la publicidad y el uso inadecuado de ella.
+
+\subsection{Relaciones farmacéutico - paciente}
+
+\subsection{Relaciones con la sociedad y las administraciones públicas}
+
+\subsection{Calidad en la dispensación y otros servicios profesionales}
+El capítulo V del CDF (art 21-24) hace referencia a que, en la dispensación por parte del farmacéutico de medicamentos y productos sanitarios, se debe velar en todo momento por la salud del paciente y garantizar el derecho del paciente o usuario a una adecuada formación sobre el medicamento dispensado y una garantía de calidad en la atención farmacéutica. Mientras que en el CEURJC, al ser completamente de un ámbito distinto,el biosanitario, no hay nada que referencie acerca de la salud del paciene debido a que no se dispone de productos sanitarios. Pero si es cierto que en el CEURJC se vela o se busca la creación y la difusión del conocimiento científico, además de ser responsable de los distintos ámbitos en los que actúan: docencia, investigación y aprendizaje…, asumiendo sus consecuencias.
  
+\subsection{Comunicación y el uso de las nuevas tecnologías}
+El capítulo VI del CDF (art 25-27) establece que solo se podrá dispensar medicamentos a distancia desde establecimientos autorizados, con las debidas garantías de privacidad y calidad en la asistencia. En cuanto a la relación con los medios de comunicación e internet, el farmacéutico velará por transmitir una información veraz, contrastada y con base científica. Se hace especial referencia, a que se debe informar y denunciar el intrusismo y/o información no veraz o ilegal, que se conozca y pueda poner en riesgo la salud del paciente o usuario. En este capítulo se recoge que el farmacéutico es el responsable de la custodia y buen uso de los dispositivos empleados en la gestión de la receta electrónica, no debiendo permitir su uso a terceras personas no autorizadas, para garantizar la intimidad del paciente o usuario.
+
+Por otro lado, en el CEURJC, aunque no hay un principio que recoja esto explícitamente, es obvio (y más en nuestra titulación) que también se ha de proporcionar información auténtica, veraz y no falsificada, siendo los miembros de la URJC responsables del buen uso de dispositivos electrónicos dentro de dicha institución.
+
+\subsection{Relaciones entre profesionales}
+El capítulo VII del CDF (art 28-31) establece que se debe colaborar con otros profesionales sanitarios para la mejora de la calidad de vida de los pacientes. Esta colaboración está basada en el respeto, lealtad e integridad, evitando una competencia desleal. Observamos que estos mismos principios éticos aparecen recogidos en el artículo de “Respeto y Colaboración” de la CEURJC, en el cual se habla de colaboración y desarrollo de buenas prácticas con el resto de miembros de la universidad.
 
 
+\subsection{Objeción de conciencia}
+Este es un tema bastante interesante pues se presenta la posibilidad en la profesión farmacéutica de negarse a realizar una acción que vaya en contra de los principios del profesional en cuestión de forma legítima.
+
+En el CDF tratan con mucho cuidado este tema, especificando el poder de este sobre otros principios, pero siempre limitándolo bajo ciertas condiciones. Entre ellas podemos destacar la independencia entre la objeción y la condición de la persona, la prohibición de su uso colectivo o cuando se busca salir beneficiado, su exclusividad para los conflictos morales y, la más importante, no limitar o condicionar la salud de ningún paciente, al igual que no se pueden imponer las convicciones del farmacéutico a este para hacerle cambiar de opinión.
+
+Sin embargo, en la URJC no se trata esta posibilidad. Según el apartado de “Tolerancia e Inclusión” del CEURJC, todas las opiniones deben ser escuchadas y respetadas, dando a entender que ningún profesor podría interponerse en un discurso pacífico\footnote{Digo pacífico pues entiendo que la tolerancia de la que se habla es la que plantea Popper. En el momento que hay violencia sería considerado como acto intolerante y, por tanto, la propia institución que es la universidad debería prohibirlo.} pese que sea polémico. Esto no quiere decir que cuando acabe el alumno no pueda ser rebatido, ¿o sí?
+
+Si por ejemplo ese discurso polémico surgiese de una cuestión religiosa, el profesor no podría, o no debería, invalidar su planteamiento. Si fuese así se estaría incumpliendo la defensa del pluralismo y la fomentación de la participación sin ningún tipo de discriminación ni distinción, en este caso, de religión.
+
+Es por estos casos en los que el poco nivel de detalle y la abstracción del CEURJC juegan en su contra. El incluir alguna herramienta como la objeción de conciencia para no seguir el código bajo ciertas condiciones resolvería este problema.
 
 
+\subsection{Publicaciones / Investigación}
 
+\subsection{Docencia}
+El CDF hace bastante hincapié en el punto de la docencia y en como los tutores deben velar por la buena calidad de la enseñanza, bien sea técnica para ejercer la profesión o ética para llegar a ser un buen profesional. También se especifica como debe ser esta enseñanza, objetiva y progresiva conforme avance la ciencia, y como debe ser el trato profesor-alumno, dejando claro que se le dedicará el tiempo que sea necesario para que desarrolle sus competencias, que se les tratará correctamente, sin menosprecios como dejarles en evidencia, y que no se le asignará funciones no relacionadas con su formación. Por último, destacan que en todo momento también se velará por el paciente, minimizando las molestias que podría ocasionar el alumno. 
 
+Irónicamente en el CEURJC se nombra bastante poco este ámbito. Siendo una institución dedicada a la formación de la gente, cabe esperar que sea el tema más recurrente y que se trate desde varios lados, nada más lejos de la realidad. De él únicamente podemos sacar que en la docencia se debería promocionar las libertades fundamentales, que debería ser de calidad y que se deberían cumplir las responsabilidades correspondientes.
 
+Como podemos ver en el CDF se explica con bastante detalle la forma en la que se debe dar la docencia, mientras que por el otro lado, en el CEURJC, no se trata en profundidad y simplemente se dan unos apuntes por encima. Esta superficialidad se podría deber al objetivo que tiene la universidad de hacer un código sintético, sin embargo, que temas relacionados con la democracia, la administración, etc. tengan más peso es un tanto extraño.
 
 
 
 \section{Conclusiones}
+\subsection{Refutación y confirmación de hipótesis}
+Respecto a las hipótesis, afirmamos nuestras dudas sobre el carácter estético del código ético de la URJC. Esto es, ha resultado que el CDF tiene un carácter más específico y menos abstracto, mientras que el código de la URJC se ha ido a los idealismos. 
 
+En un inicio pensamos que el CDF no le daría importancia a cuestiones como la argumentación racional. Esto finalmente ocurre en un sentido ligeramente diferente, pues el CDF le da importancia al método científico al ejercer, las soluciones con eficacia probada y al desarrollo personal intelectual, que también tiene sentido en un contexto universitario. Por otro lado, nuestras hipótesis fueron acertadas en que los dos códigos éticos velan por los derechos fundamentales de las personas. No solo esto, sino que además, el CDF especifica sobre como se debería de tratar de forma justa a otros pacientes y a otros profesionales de la farmacéutica.
+
+En lo que sí nuestras hipótesis fueron acertadas es en la clara diferencia en todas las cuestiones de elecciones y participaciones democráticas. Aunque el CDF le de importancia a organismos como lo son los colegios de farmacéuticos, no existe un sistema electoral dentro del entorno de estos profesionales. Pese a que el profesional tenga que ser transparente, sincero y justo con sus pacientes, no existe como tal un Gobierno que tenga que cumplir estas normas, por mucho que exista un Colegio Farmacéutico con cargos públicos. Respecto a cuestiones como la asunción de consecuencias, la búsqueda de la calidad de los medicamentos y el fin último de una mejor sociedad, nuestras hipótesis fueron claramente confirmadas, pues eran realmente obvias.
+
+\section{Propuestas}
 
 
 \pagebreak
@@ -122,7 +225,7 @@ Aun así, la ética y deontología del farmacéutico tiene importancia ante la l
 \begin{itemize}[label = {}]
 	\item Anexo 1. \href{https://www.portalfarma.com/Profesionales/organizacionfcolegial/portal-transparencia/Documents/2018-Codigo-Deontologia-Profesion-Farmaceutica-CGCOF.pdf}{Código Deontológico de la Profesión Farmacéutica}.
 	\item Anexo 2. \href{https://www.urjc.es/codigoetico}{Código Ético de la Universidad Rey Juan Carlos}.
-\item Anexo 3. Código \href{http://www.github.com/DennisDv24}{\LaTeX} del trabajo.
+\item Anexo 3. Código \href{https://github.com/Denis-urjc/PJtrabajo}{\LaTeX} del trabajo.
 \item Anexo 4. \href{https://docs.google.com/document/d/1JPIhGiP2SUPTwZ42QgbEhY5bHKPIPoN0i3u79ej2DwQ/edit#heading=h.zf8tz9rpog2d}{Borrador del trabajo}.
 \item Anexo 5. \href{https://docs.google.com/document/d/1jByW4G1lbvmoq82MXhN4lJDx3bpDZP1n1jSouQVpACU/edit#heading=h.ocedmy22huli}{Borrador de los resúmenes del Código Deontológico de la Profesión Farmacéutica}.
 \end{itemize}
