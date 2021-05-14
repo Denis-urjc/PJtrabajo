@@ -1,0 +1,10 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Introducción}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}¿Por qué estos dos códigos?}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Hipótesis}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Diferencias entre los códigos}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Generalidades y ámbitos de aplicación}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Principios básicos}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Objetividad y subjetividad}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Conclusiones}{4}{section.3}%
+\contentsline {section}{Anexos}{5}{section*.2}%
